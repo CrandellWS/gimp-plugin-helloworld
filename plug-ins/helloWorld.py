@@ -55,7 +55,6 @@ register(
     helloWorldFn,
 
     #this can be included this way or the menu value can be directly prepended to the menupath
-    menu = "<Toolbox>/Hello/"
-)
+    menu = "<Toolbox>/Hello/")
 
 main()

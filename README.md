@@ -39,6 +39,11 @@ In the above example the integer 3 reflects the messageOptions:
 messageOptions = {0:noMessage,1:terminalMessage,2:gtkMessage,3:gimpMessage}
 ```
 
+With the helloParameterWorldPlugin Example a batch call will have 17 parameters Here is an example:
+```cmd
+ --verbose -d -i -b "(call_helloParameterWorld 123 3.55 "some string" "some long string" 2 "3xs" 0 17 87 (80, 33, 10) "Sans" "2. Star" "3D Green" "Blinds" "Firecode" 0 0)"
+ ```
+
 License
 ----
 

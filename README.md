@@ -20,7 +20,7 @@ Dillinger is currently extended with the following plugins
 * helloBatchWorldMessages (show a better alternative to displaying messages)
 
 Basic Batch Call:
-```sh
+```cmd
 gimp -i -b "(call_helloWorld)"
 ```
 
@@ -30,8 +30,13 @@ gimp -i -b "(call_helloBatchWorldMessages 3)"
 ```
 
 With verbose output and no extra data:
-```sh
+```cmd
 gimp --verbose -d -i -b "(call_helloBatchWorldMessages 3)"
+```
+
+In the above example the integer 3 reflects the messageOptions:
+```python
+messageOptions = {0:noMessage,1:terminalMessage,2:gtkMessage,3:gimpMessage}
 ```
 
 License

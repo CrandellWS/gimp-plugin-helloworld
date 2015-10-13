@@ -1,0 +1,352 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module helloWorld</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>helloWorld</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/ubuntu/7E80FF2E80FEEC11/Users/William/Projects/gimp-plugin-samples/plug-ins/helloWorld.py">/media/ubuntu/7E80FF2E80FEEC11/Users/William/Projects/gimp-plugin-samples/plug-ins/helloWorld.py</a></font></td></tr></table>
+    <p><tt>##&nbsp;@file&nbsp;helloWorld.py<br>
+#&nbsp;A&nbsp;basic&nbsp;Python&nbsp;based&nbsp;plugin&nbsp;for&nbsp;GIMP<br>
+#<br>
+#&nbsp;Depicts&nbsp;a&nbsp;basic&nbsp;HelloWorld&nbsp;plugin&nbsp;for&nbsp;&lt;a&nbsp;href="<a href="http://gimp.org&quot;&gt;GIMP&lt;/a">http://gimp.org&quot;&gt;GIMP&lt;/a</a>&gt;<br>
+#&nbsp;This&nbsp;plugin&nbsp;will&nbsp;generated&nbsp;messages&nbsp;in&nbsp;various&nbsp;formats,&nbsp;it&nbsp;is&nbsp;generally&nbsp;prefered&nbsp;to&nbsp;use&nbsp;GIMP's&nbsp;interal&nbsp;procedure&nbsp;database&nbsp;pdb.gimp_message</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="gettext.html">gettext</a><br>
+<a href="gimp.html">gimp</a><br>
+</td><td width="25%" valign=top><a href="gimpcolor.html">gimpcolor</a><br>
+<a href="gtk.html">gtk</a><br>
+</td><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-helloWorldFn"><strong>helloWorldFn</strong></a>()</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ABSOLUTE_CONVOL</strong> = 1<br>
+<strong>ADDITION_MODE</strong> = 7<br>
+<strong>ADD_ALPHA_MASK</strong> = 2<br>
+<strong>ADD_ALPHA_TRANSFER_MASK</strong> = 3<br>
+<strong>ADD_BLACK_MASK</strong> = 1<br>
+<strong>ADD_CHANNEL_MASK</strong> = 6<br>
+<strong>ADD_COPY_MASK</strong> = 5<br>
+<strong>ADD_SELECTION_MASK</strong> = 4<br>
+<strong>ADD_WHITE_MASK</strong> = 0<br>
+<strong>ALL_HUES</strong> = 0<br>
+<strong>ALPHA_CHANNEL</strong> = 5<br>
+<strong>BACKGROUND_FILL</strong> = 1<br>
+<strong>BEHIND_MODE</strong> = 2<br>
+<strong>BG_BUCKET_FILL</strong> = 1<br>
+<strong>BLUE_CHANNEL</strong> = 2<br>
+<strong>BLUE_HUES</strong> = 5<br>
+<strong>BLUR_CONVOLVE</strong> = 0<br>
+<strong>BRUSH_GENERATED_CIRCLE</strong> = 0<br>
+<strong>BRUSH_GENERATED_DIAMOND</strong> = 2<br>
+<strong>BRUSH_GENERATED_SQUARE</strong> = 1<br>
+<strong>BRUSH_HARD</strong> = 0<br>
+<strong>BRUSH_SOFT</strong> = 1<br>
+<strong>BURN</strong> = 1<br>
+<strong>BURN_MODE</strong> = 17<br>
+<strong>CHANNEL_OP_ADD</strong> = 0<br>
+<strong>CHANNEL_OP_INTERSECT</strong> = 3<br>
+<strong>CHANNEL_OP_REPLACE</strong> = 2<br>
+<strong>CHANNEL_OP_SUBTRACT</strong> = 1<br>
+<strong>CHECK_SIZE_LARGE_CHECKS</strong> = 2<br>
+<strong>CHECK_SIZE_MEDIUM_CHECKS</strong> = 1<br>
+<strong>CHECK_SIZE_SMALL_CHECKS</strong> = 0<br>
+<strong>CHECK_TYPE_BLACK_ONLY</strong> = 5<br>
+<strong>CHECK_TYPE_DARK_CHECKS</strong> = 2<br>
+<strong>CHECK_TYPE_GRAY_CHECKS</strong> = 1<br>
+<strong>CHECK_TYPE_GRAY_ONLY</strong> = 4<br>
+<strong>CHECK_TYPE_LIGHT_CHECKS</strong> = 0<br>
+<strong>CHECK_TYPE_WHITE_ONLY</strong> = 3<br>
+<strong>CLIP_TO_BOTTOM_LAYER</strong> = 2<br>
+<strong>CLIP_TO_IMAGE</strong> = 1<br>
+<strong>COLOR_ERASE_MODE</strong> = 22<br>
+<strong>COLOR_MODE</strong> = 13<br>
+<strong>CONSOLE</strong> = 1<br>
+<strong>CUSTOM_MODE</strong> = 3<br>
+<strong>CUSTOM_PALETTE</strong> = 4<br>
+<strong>CYAN_HUES</strong> = 4<br>
+<strong>DARKEN_ONLY_MODE</strong> = 9<br>
+<strong>DESATURATE_AVERAGE</strong> = 2<br>
+<strong>DESATURATE_LIGHTNESS</strong> = 0<br>
+<strong>DESATURATE_LUMINOSITY</strong> = 1<br>
+<strong>DIFFERENCE_MODE</strong> = 6<br>
+<strong>DISSOLVE_MODE</strong> = 1<br>
+<strong>DIVIDE_MODE</strong> = 15<br>
+<strong>DODGE</strong> = 0<br>
+<strong>DODGE_MODE</strong> = 16<br>
+<strong>ERROR_CONSOLE</strong> = 2<br>
+<strong>EXPAND_AS_NECESSARY</strong> = 0<br>
+<strong>EXTENSION</strong> = 2<br>
+<strong>FALSE</strong> = False<br>
+<strong>FG_BG_HSV_MODE</strong> = 1<br>
+<strong>FG_BG_RGB_MODE</strong> = 0<br>
+<strong>FG_BUCKET_FILL</strong> = 0<br>
+<strong>FG_TRANSPARENT_MODE</strong> = 2<br>
+<strong>FIXED_DITHER</strong> = 3<br>
+<strong>FLATTEN_IMAGE</strong> = 3<br>
+<strong>FOREGROUND_EXTRACT_SIOX</strong> = 0<br>
+<strong>FOREGROUND_FILL</strong> = 0<br>
+<strong>FSLOWBLEED_DITHER</strong> = 2<br>
+<strong>FS_DITHER</strong> = 1<br>
+<strong>GRADIENT_BILINEAR</strong> = 1<br>
+<strong>GRADIENT_CONICAL_ASYMMETRIC</strong> = 5<br>
+<strong>GRADIENT_CONICAL_SYMMETRIC</strong> = 4<br>
+<strong>GRADIENT_LINEAR</strong> = 0<br>
+<strong>GRADIENT_RADIAL</strong> = 2<br>
+<strong>GRADIENT_SEGMENT_CURVED</strong> = 1<br>
+<strong>GRADIENT_SEGMENT_HSV_CCW</strong> = 1<br>
+<strong>GRADIENT_SEGMENT_HSV_CW</strong> = 2<br>
+<strong>GRADIENT_SEGMENT_LINEAR</strong> = 0<br>
+<strong>GRADIENT_SEGMENT_RGB</strong> = 0<br>
+<strong>GRADIENT_SEGMENT_SINE</strong> = 2<br>
+<strong>GRADIENT_SEGMENT_SPHERE_DECREASING</strong> = 4<br>
+<strong>GRADIENT_SEGMENT_SPHERE_INCREASING</strong> = 3<br>
+<strong>GRADIENT_SHAPEBURST_ANGULAR</strong> = 6<br>
+<strong>GRADIENT_SHAPEBURST_DIMPLED</strong> = 8<br>
+<strong>GRADIENT_SHAPEBURST_SPHERICAL</strong> = 7<br>
+<strong>GRADIENT_SPIRAL_ANTICLOCKWISE</strong> = 10<br>
+<strong>GRADIENT_SPIRAL_CLOCKWISE</strong> = 9<br>
+<strong>GRADIENT_SQUARE</strong> = 3<br>
+<strong>GRAIN_EXTRACT_MODE</strong> = 20<br>
+<strong>GRAIN_MERGE_MODE</strong> = 21<br>
+<strong>GRAY</strong> = 1<br>
+<strong>GRAYA_IMAGE</strong> = 3<br>
+<strong>GRAY_CHANNEL</strong> = 3<br>
+<strong>GRAY_IMAGE</strong> = 2<br>
+<strong>GREEN_CHANNEL</strong> = 1<br>
+<strong>GREEN_HUES</strong> = 3<br>
+<strong>GRID_DOTS</strong> = 0<br>
+<strong>GRID_DOUBLE_DASH</strong> = 3<br>
+<strong>GRID_INTERSECTIONS</strong> = 1<br>
+<strong>GRID_ON_OFF_DASH</strong> = 2<br>
+<strong>GRID_SOLID</strong> = 4<br>
+<strong>HARDLIGHT_MODE</strong> = 18<br>
+<strong>HIGHLIGHTS</strong> = 2<br>
+<strong>HISTOGRAM_ALPHA</strong> = 4<br>
+<strong>HISTOGRAM_BLUE</strong> = 3<br>
+<strong>HISTOGRAM_GREEN</strong> = 2<br>
+<strong>HISTOGRAM_RED</strong> = 1<br>
+<strong>HISTOGRAM_VALUE</strong> = 0<br>
+<strong>HUE_MODE</strong> = 11<br>
+<strong>ICON_TYPE_IMAGE_FILE</strong> = 2<br>
+<strong>ICON_TYPE_INLINE_PIXBUF</strong> = 1<br>
+<strong>ICON_TYPE_STOCK_ID</strong> = 0<br>
+<strong>IMAGE_CLONE</strong> = 0<br>
+<strong>INDEXED</strong> = 2<br>
+<strong>INDEXEDA_IMAGE</strong> = 5<br>
+<strong>INDEXED_CHANNEL</strong> = 4<br>
+<strong>INDEXED_IMAGE</strong> = 4<br>
+<strong>INK_BLOB_TYPE_CIRCLE</strong> = 0<br>
+<strong>INK_BLOB_TYPE_DIAMOND</strong> = 2<br>
+<strong>INK_BLOB_TYPE_SQUARE</strong> = 1<br>
+<strong>INTERNAL</strong> = 0<br>
+<strong>INTERPOLATION_CUBIC</strong> = 2<br>
+<strong>INTERPOLATION_LANCZOS</strong> = 3<br>
+<strong>INTERPOLATION_LINEAR</strong> = 1<br>
+<strong>INTERPOLATION_NONE</strong> = 0<br>
+<strong>LIGHTEN_ONLY_MODE</strong> = 10<br>
+<strong>MAGENTA_HUES</strong> = 6<br>
+<strong>MAKE_PALETTE</strong> = 0<br>
+<strong>MASK_APPLY</strong> = 0<br>
+<strong>MASK_DISCARD</strong> = 1<br>
+<strong>MAX_IMAGE_SIZE</strong> = 262144<br>
+<strong>MAX_MEMSIZE</strong> = 4398046511104L<br>
+<strong>MAX_RESOLUTION</strong> = 65536.0<br>
+<strong>MESSAGE_BOX</strong> = 0<br>
+<strong>MIDTONES</strong> = 1<br>
+<strong>MIN_IMAGE_SIZE</strong> = 1<br>
+<strong>MIN_RESOLUTION</strong> = 0.005<br>
+<strong>MONO_PALETTE</strong> = 3<br>
+<strong>MULTIPLY_MODE</strong> = 3<br>
+<strong>NEGATIVE_CONVOL</strong> = 2<br>
+<strong>NORMAL_CONVOL</strong> = 0<br>
+<strong>NORMAL_MODE</strong> = 0<br>
+<strong>NO_DITHER</strong> = 0<br>
+<strong>OFFSET_BACKGROUND</strong> = 0<br>
+<strong>OFFSET_TRANSPARENT</strong> = 1<br>
+<strong>ORIENTATION_HORIZONTAL</strong> = 0<br>
+<strong>ORIENTATION_UNKNOWN</strong> = 2<br>
+<strong>ORIENTATION_VERTICAL</strong> = 1<br>
+<strong>OVERLAY_MODE</strong> = 5<br>
+<strong>PAINT_CONSTANT</strong> = 0<br>
+<strong>PAINT_INCREMENTAL</strong> = 1<br>
+<strong>PARASITE_ATTACH_GRANDPARENT</strong> = 8388608<br>
+<strong>PARASITE_ATTACH_PARENT</strong> = 32768<br>
+<strong>PARASITE_GRANDPARENT_PERSISTENT</strong> = 65536<br>
+<strong>PARASITE_GRANDPARENT_UNDOABLE</strong> = 131072<br>
+<strong>PARASITE_PARENT_PERSISTENT</strong> = 256<br>
+<strong>PARASITE_PARENT_UNDOABLE</strong> = 512<br>
+<strong>PARASITE_PERSISTENT</strong> = 1<br>
+<strong>PARASITE_UNDOABLE</strong> = 2<br>
+<strong>PATTERN_BUCKET_FILL</strong> = 2<br>
+<strong>PATTERN_CLONE</strong> = 1<br>
+<strong>PATTERN_FILL</strong> = 4<br>
+<strong>PDB_CALLING_ERROR</strong> = 1<br>
+<strong>PDB_CANCEL</strong> = 4<br>
+<strong>PDB_CHANNEL</strong> = 15<br>
+<strong>PDB_COLOR</strong> = 10<br>
+<strong>PDB_COLORARRAY</strong> = 18<br>
+<strong>PDB_DISPLAY</strong> = 12<br>
+<strong>PDB_DRAWABLE</strong> = 16<br>
+<strong>PDB_END</strong> = 22<br>
+<strong>PDB_ERROR_HANDLER_INTERNAL</strong> = 0<br>
+<strong>PDB_ERROR_HANDLER_PLUGIN</strong> = 1<br>
+<strong>PDB_EXECUTION_ERROR</strong> = 0<br>
+<strong>PDB_FLOAT</strong> = 3<br>
+<strong>PDB_FLOATARRAY</strong> = 8<br>
+<strong>PDB_IMAGE</strong> = 13<br>
+<strong>PDB_INT16</strong> = 1<br>
+<strong>PDB_INT16ARRAY</strong> = 6<br>
+<strong>PDB_INT32</strong> = 0<br>
+<strong>PDB_INT32ARRAY</strong> = 5<br>
+<strong>PDB_INT8</strong> = 2<br>
+<strong>PDB_INT8ARRAY</strong> = 7<br>
+<strong>PDB_ITEM</strong> = 11<br>
+<strong>PDB_LAYER</strong> = 14<br>
+<strong>PDB_PARASITE</strong> = 20<br>
+<strong>PDB_PASS_THROUGH</strong> = 2<br>
+<strong>PDB_SELECTION</strong> = 17<br>
+<strong>PDB_STATUS</strong> = 21<br>
+<strong>PDB_STRING</strong> = 4<br>
+<strong>PDB_STRINGARRAY</strong> = 9<br>
+<strong>PDB_SUCCESS</strong> = 3<br>
+<strong>PDB_VECTORS</strong> = 19<br>
+<strong>PF_ADJUSTMENT</strong> = 1002<br>
+<strong>PF_BOOL</strong> = 1000<br>
+<strong>PF_BRUSH</strong> = 1005<br>
+<strong>PF_CHANNEL</strong> = 15<br>
+<strong>PF_COLOR</strong> = 10<br>
+<strong>PF_COLOUR</strong> = 10<br>
+<strong>PF_DIRNAME</strong> = 1012<br>
+<strong>PF_DISPLAY</strong> = 12<br>
+<strong>PF_DRAWABLE</strong> = 16<br>
+<strong>PF_FILE</strong> = 1004<br>
+<strong>PF_FILENAME</strong> = 1011<br>
+<strong>PF_FLOAT</strong> = 3<br>
+<strong>PF_FONT</strong> = 1003<br>
+<strong>PF_GRADIENT</strong> = 1007<br>
+<strong>PF_IMAGE</strong> = 13<br>
+<strong>PF_INT</strong> = 0<br>
+<strong>PF_INT16</strong> = 1<br>
+<strong>PF_INT32</strong> = 0<br>
+<strong>PF_INT8</strong> = 2<br>
+<strong>PF_ITEM</strong> = 11<br>
+<strong>PF_LAYER</strong> = 14<br>
+<strong>PF_OPTION</strong> = 1013<br>
+<strong>PF_PALETTE</strong> = 1010<br>
+<strong>PF_PATTERN</strong> = 1006<br>
+<strong>PF_RADIO</strong> = 1008<br>
+<strong>PF_SLIDER</strong> = 1001<br>
+<strong>PF_SPINNER</strong> = 1002<br>
+<strong>PF_STRING</strong> = 4<br>
+<strong>PF_TEXT</strong> = 1009<br>
+<strong>PF_TOGGLE</strong> = 1000<br>
+<strong>PF_VALUE</strong> = 4<br>
+<strong>PF_VECTORS</strong> = 19<br>
+<strong>PIXELS</strong> = 0<br>
+<strong>PIXEL_FETCHER_EDGE_BACKGROUND</strong> = 4<br>
+<strong>PIXEL_FETCHER_EDGE_BLACK</strong> = 3<br>
+<strong>PIXEL_FETCHER_EDGE_NONE</strong> = 0<br>
+<strong>PIXEL_FETCHER_EDGE_SMEAR</strong> = 2<br>
+<strong>PIXEL_FETCHER_EDGE_WRAP</strong> = 1<br>
+<strong>PLUGIN</strong> = 1<br>
+<strong>POINTS</strong> = 1<br>
+<strong>PROGRESS_COMMAND_END</strong> = 1<br>
+<strong>PROGRESS_COMMAND_GET_WINDOW</strong> = 5<br>
+<strong>PROGRESS_COMMAND_PULSE</strong> = 4<br>
+<strong>PROGRESS_COMMAND_SET_TEXT</strong> = 2<br>
+<strong>PROGRESS_COMMAND_SET_VALUE</strong> = 3<br>
+<strong>PROGRESS_COMMAND_START</strong> = 0<br>
+<strong>RED_CHANNEL</strong> = 0<br>
+<strong>RED_HUES</strong> = 1<br>
+<strong>REPEAT_NONE</strong> = 0<br>
+<strong>REPEAT_SAWTOOTH</strong> = 1<br>
+<strong>REPEAT_TRIANGULAR</strong> = 2<br>
+<strong>REUSE_PALETTE</strong> = 1<br>
+<strong>RGB</strong> = 0<br>
+<strong>RGBA_IMAGE</strong> = 1<br>
+<strong>RGB_IMAGE</strong> = 0<br>
+<strong>ROTATE_180</strong> = 1<br>
+<strong>ROTATE_270</strong> = 2<br>
+<strong>ROTATE_90</strong> = 0<br>
+<strong>RUN_INTERACTIVE</strong> = 0<br>
+<strong>RUN_NONINTERACTIVE</strong> = 1<br>
+<strong>RUN_WITH_LAST_VALS</strong> = 2<br>
+<strong>SATURATION_MODE</strong> = 12<br>
+<strong>SCREEN_MODE</strong> = 4<br>
+<strong>SELECT_CRITERION_B</strong> = 3<br>
+<strong>SELECT_CRITERION_COMPOSITE</strong> = 0<br>
+<strong>SELECT_CRITERION_G</strong> = 2<br>
+<strong>SELECT_CRITERION_H</strong> = 4<br>
+<strong>SELECT_CRITERION_R</strong> = 1<br>
+<strong>SELECT_CRITERION_S</strong> = 5<br>
+<strong>SELECT_CRITERION_V</strong> = 6<br>
+<strong>SHADOWS</strong> = 0<br>
+<strong>SHARPEN_CONVOLVE</strong> = 1<br>
+<strong>SOFTLIGHT_MODE</strong> = 19<br>
+<strong>STACK_TRACE_ALWAYS</strong> = 2<br>
+<strong>STACK_TRACE_NEVER</strong> = 0<br>
+<strong>STACK_TRACE_QUERY</strong> = 1<br>
+<strong>SUBTRACT_MODE</strong> = 8<br>
+<strong>TEMPORARY</strong> = 3<br>
+<strong>TEXT_DIRECTION_LTR</strong> = 0<br>
+<strong>TEXT_DIRECTION_RTL</strong> = 1<br>
+<strong>TEXT_HINT_STYLE_FULL</strong> = 3<br>
+<strong>TEXT_HINT_STYLE_MEDIUM</strong> = 2<br>
+<strong>TEXT_HINT_STYLE_NONE</strong> = 0<br>
+<strong>TEXT_HINT_STYLE_SLIGHT</strong> = 1<br>
+<strong>TEXT_JUSTIFY_CENTER</strong> = 2<br>
+<strong>TEXT_JUSTIFY_FILL</strong> = 3<br>
+<strong>TEXT_JUSTIFY_LEFT</strong> = 0<br>
+<strong>TEXT_JUSTIFY_RIGHT</strong> = 1<br>
+<strong>TRANSFORM_BACKWARD</strong> = 1<br>
+<strong>TRANSFORM_FORWARD</strong> = 0<br>
+<strong>TRANSFORM_RESIZE_ADJUST</strong> = 0<br>
+<strong>TRANSFORM_RESIZE_CLIP</strong> = 1<br>
+<strong>TRANSFORM_RESIZE_CROP</strong> = 2<br>
+<strong>TRANSFORM_RESIZE_CROP_WITH_ASPECT</strong> = 3<br>
+<strong>TRANSPARENT_FILL</strong> = 3<br>
+<strong>TRUE</strong> = True<br>
+<strong>UNIT_INCH</strong> = 1<br>
+<strong>UNIT_MM</strong> = 2<br>
+<strong>UNIT_PICA</strong> = 4<br>
+<strong>UNIT_PIXEL</strong> = 0<br>
+<strong>UNIT_POINT</strong> = 3<br>
+<strong>USER_DIRECTORY_DESKTOP</strong> = 0<br>
+<strong>USER_DIRECTORY_DOCUMENTS</strong> = 1<br>
+<strong>USER_DIRECTORY_DOWNLOAD</strong> = 2<br>
+<strong>USER_DIRECTORY_MUSIC</strong> = 3<br>
+<strong>USER_DIRECTORY_PICTURES</strong> = 4<br>
+<strong>USER_DIRECTORY_PUBLIC_SHARE</strong> = 5<br>
+<strong>USER_DIRECTORY_TEMPLATES</strong> = 6<br>
+<strong>USER_DIRECTORY_VIDEOS</strong> = 7<br>
+<strong>VALUE_MODE</strong> = 14<br>
+<strong>VECTORS_STROKE_TYPE_BEZIER</strong> = 0<br>
+<strong>WEB_PALETTE</strong> = 2<br>
+<strong>WHITE_FILL</strong> = 2<br>
+<strong>YELLOW_HUES</strong> = 2<br>
+<strong>pdb</strong> = &lt;gimp procedural database&gt;<br>
+<strong>t</strong> = &lt;gettext.NullTranslations instance&gt;</td></tr></table>
+</body></html>

@@ -1,5 +1,12 @@
 #!/usr/bin/env python
+## @file helloWorld.py
+# A basic Python based plugin for GIMP
+#
+# Depicts a basic HelloWorld plugin for <a href="http://gimp.org">GIMP</a>
+# This plugin will generated messages in various formats, it is generally prefered to use GIMP's interal procedure database pdb.gimp_message
 
+## <a href="http://www.gtk.org/">GTK+, or the GIMP Toolkit</a>, is a multi-platform toolkit for creating graphical user interfaces.
+#
 import gtk
 from gimpfu import *
 
